@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Base define -->
+	<definition name="base.definition"
+		template="/WEB-INF/layouts/classic.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/basefragments/Header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="side"
+			value="/WEB-INF/basefragments/_side.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/basefragments/Footer.jsp" />
+	</definition>
+
+
+	<!-- Welcome Page -->
+	<definition name="welcome" extends="base.definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/WelcomeView.jsp" />
+	</definition>
+	
+	<!-- About Page -->
+	<definition name="aboutus" extends="base.definition">
+		<put-attribute name="title" value="About" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/AboutView.jsp" />
+	</definition>
+
+	<!-- SingUp Page -->
+
+	<definition name="register" extends="base.definition">
+              <put-attribute name="title" value="User Registeration" />
+              <put-attribute name="body" value="/WEB-INF/bodyfragments/UserRegistrationView.jsp"/>
+	</definition>
+	
+	<!-- Login Page -->
+	
+	<definition name="login" extends="base.definition">
+	<put-attribute name="title" value="Login Ctl"/>
+	<put-attribute name="body" value="/WEB-INF/bodyfragments/LoginView.jsp" />
+	</definition>
+	
+		<!-- Voter Login Page -->
+	
+	<definition name="voter" extends="base.definition">
+	<put-attribute name="title" value="Login Ctl"/>
+	<put-attribute name="body" value="/WEB-INF/bodyfragments/VoterSignin.jsp" />
+	</definition>
+	
+	<!-- UserList -->
+	<definition name="list" extends="base.definition">
+	<put-attribute name="title" value="User List" />
+	<put-attribute name="body" value="/WEB-INF/bodyfragments/UserListView.jsp" />
+	</definition>
+	
+	<!-- Update -->
+	<definition name="update" extends="base.definition">
+	<put-attribute name="title" value="User Update"/>
+    <put-attribute name="body" value="/WEB-INF/bodyfragments/UserUpdate.jsp"/>	
+	</definition>
+	
+		<!-- Vote -->
+	<definition name="vote" extends="base.definition">
+	<put-attribute name="title" value="Vote"/>
+    <put-attribute name="body" value="/WEB-INF/bodyfragments/VoteView.jsp"/>	
+	</definition>
+	
+		<!-- Vote List-->
+	<definition name="votelist" extends="base.definition">
+	<put-attribute name="title" value="Vote List"/>
+    <put-attribute name="body" value="/WEB-INF/bodyfragments/VoteList.jsp"/>	
+	</definition>
+	
+		
+		<!-- Parties -->
+	<definition name="party" extends="base.definition">
+	<put-attribute name="title" value="Party"/>
+    <put-attribute name="body" value="/WEB-INF/bodyfragments/PartyView.jsp"/>	
+	</definition>
+	
+	
+		<!-- Parties List -->
+	<definition name="Partylist" extends="base.definition">
+	<put-attribute name="title" value="Party List" />
+	<put-attribute name="body" value="/WEB-INF/bodyfragments/PartiesListView.jsp" />
+	</definition>
+	
+		<!--Party Update -->
+	<definition name="partyupdate" extends="base.definition">
+	<put-attribute name="title" value="Party Update"/>
+    <put-attribute name="body" value="/WEB-INF/bodyfragments/PartyUpdate.jsp"/>	
+	</definition>
+	
+			<!--Voters Vote List -->
+	<definition name="votersvotelist" extends="base.definition">
+	<put-attribute name="title" value="Voters Vote List"/>
+    <put-attribute name="body" value="/WEB-INF/bodyfragments/VotersVoteList.jsp"/>	
+	</definition>
+	
+</tiles-definitions>      
